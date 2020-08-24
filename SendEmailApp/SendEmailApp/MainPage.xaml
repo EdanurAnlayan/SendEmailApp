@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SendEmailApp.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">
+            <Image Margin="0,100,0,0" 
+                   Source="https://devdays.xamarinturkiye.com/img/core-img/logo.png" />
+            <Entry x:Name="txtTo" 
+                   Placeholder="someone@example.com" 
+                   PlaceholderColor="#8bcdcd" 
+                   TextColor="#e2979c" /> 
+            <Entry x:Name="txtSubject" 
+                   Placeholder="Subject" 
+                   PlaceholderColor="#8bcdcd" 
+                   TextColor="#e2979c"/>
+            <Editor x:Name="txtBody" 
+                    Placeholder="Body.." 
+                    HeightRequest="150" 
+                    PlaceholderColor="#8bcdcd" 
+                    TextColor="#e2979c"
+                    VerticalOptions="FillAndExpand"/>
+            <Button x:Name="btnSend" 
+                    Text="Send Mail"
+                    BackgroundColor="#8bcdcd"
+                    TextColor="#e5edb7"
+                    Clicked="btnSend_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
